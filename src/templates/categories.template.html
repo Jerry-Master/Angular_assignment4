@@ -1,0 +1,8 @@
+<p>Have a look at our categories.</p>
+<ul>
+    <li ng-repeat="category in mainList.categories"
+        ui-sref="items({categoryShortName: category.short_name})"
+        class="category">
+      {{ category.name }}
+    </li>
+</ul>
